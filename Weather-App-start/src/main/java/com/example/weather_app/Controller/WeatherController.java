@@ -32,7 +32,7 @@ public class WeatherController {
 		model.addAttribute("country",weatherResponse.getSys().getCountry());
 		model.addAttribute("weatherDescription",weatherResponse.getWeather().get(0).getDescription());
 		model.addAttribute("temperature",weatherResponse.getMain().getTemp());
-		model.addAttribute("humidty",weatherResponse.getMain().getHumidity());
+		model.addAttribute("humidity",weatherResponse.getMain().getHumidity());
 		model.addAttribute("windSpeed",weatherResponse.getWind().getSpeed());
 		String weatherIcon="wi wi-own-"+weatherResponse.getWeather().get(0).getId();
 		model.addAttribute("weatherIcon",weatherIcon);
